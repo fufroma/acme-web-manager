@@ -4,6 +4,9 @@ This application is a graphical frontend for [Acme Php Client](https://github.co
 
 It is still under development and MUST NOT be used in production, use at your own risks.
 
+## Requirements
+
+* PHP **version >= 5.5**
 
 ## Installation
 
