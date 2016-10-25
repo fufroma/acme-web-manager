@@ -10,7 +10,12 @@ php:
 
 install: composer install
 
-script: ./vendor/bin/phpunit --coverage-clover=coverage.clover
+before_script:
+ - chmod +x scripts/test-php-syntax.sh
+
+script: 
+  - ./vendor/bin/phpunit --coverage-clover=coverage.clover
+  - ./scripts/test-php-syntax.sh
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
